@@ -22,7 +22,7 @@ public class Player : MonoBehaviour
 
     public void SpawnWater()
     {
-        if (Input.touchCount > 0)
+       /* if (Input.touchCount > 0)
         {
             Touch touch = Input.GetTouch(0);
             Vector2 touchPos = Camera.main.ScreenToWorldPoint(touch.position);
@@ -34,7 +34,20 @@ public class Player : MonoBehaviour
             if(touch.phase == TouchPhase.Ended)
             {
                 Destroy(water);
+            }*/
+            if (Input.touchCount > 0)
+            {
+                Touch touch = Input.GetTouch(0);
+                Vector2 touchPos = Camera.main.ScreenToWorldPoint(touch.position);
+
+                if (touch.phase == TouchPhase.Began)
+                {
+                    Instantiate(water, touchPos, Quaternion.identity);
+                }
+                if (touch.phase == TouchPhase.Ended)
+                {
+                    Destroy(water);
+                }
             }
-        }
     }
 }
