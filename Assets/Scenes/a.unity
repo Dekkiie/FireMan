@@ -333,6 +333,7 @@ GameObject:
   m_Component:
   - component: {fileID: 572096533}
   - component: {fileID: 572096532}
+  - component: {fileID: 572096534}
   m_Layer: 0
   m_Name: CamionBomberos
   m_TagString: Untagged
@@ -410,6 +411,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &572096534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 572096531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60a4e02441eaa83459417bb2120bd6ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  water: {fileID: 3983693851119202730, guid: 9e71ad3a420ec2149ad97060c357475c, type: 3}
 --- !u!1 &1738617952
 GameObject:
   m_ObjectHideFlags: 0
