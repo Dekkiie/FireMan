@@ -6,48 +6,32 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
 
-    public GameObject water;
+    Vector3 touchPosWorld;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    //Change me to change the touch phase used.
+    TouchPhase touchPhase = TouchPhase.Ended;
 
-    // Update is called once per frame
     void Update()
     {
-        SpawnWater();
-    }
-
-    public void SpawnWater()
-    {
-       /* if (Input.touchCount > 0)
+        //We check if we have more than one touch happening.
+        //We also check if the first touches phase is Ended (that the finger was lifted)
+        if (Input.touchCount > 0 && Input.GetTouch(0).phase == touchPhase)
         {
-            Touch touch = Input.GetTouch(0);
-            Vector2 touchPos = Camera.main.ScreenToWorldPoint(touch.position);
+            //We transform the touch position into word space from screen space and store it.
+            touchPosWorld = Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position);
 
-            if(touch.phase == TouchPhase.Began)
-            {
-                Instantiate(water, touchPos, Quaternion.identity);
-            }
-            if(touch.phase == TouchPhase.Ended)
-            {
-                Destroy(water);
-            }*/
-            if (Input.touchCount > 0)
-            {
-                Touch touch = Input.GetTouch(0);
-                Vector2 touchPos = Camera.main.ScreenToWorldPoint(touch.position);
+            Vector2 touchPosWorld2D = new Vector2(touchPosWorld.x, touchPosWorld.y);
 
-                if (touch.phase == TouchPhase.Began)
-                {
-                    Instantiate(water, touchPos, Quaternion.identity);
-                }
-                if (touch.phase == TouchPhase.Ended)
-                {
-                    Destroy(water);
-                }
+            //We now raycast with this information. If we have hit something we can process it.
+            RaycastHit2D hitInformation = Physics2D.Raycast(touchPosWorld2D, Camera.main.transform.forward);
+
+            if (hitInformation.collider != null)
+            {
+                //We should have hit something with a 2D Physics collider!
+                GameObject touchedObject = hitInformation.transform.gameObject;
+                //touchedObject should be the object someone touched.
+                Debug.Log("Touched " + touchedObject.transform.name);
             }
+        }
     }
 }
