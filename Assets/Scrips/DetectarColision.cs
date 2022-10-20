@@ -41,7 +41,7 @@ public class DetectarColision : MonoBehaviour
 
     void RecorrerLista(List<Evento> _evento, string _tag)
     {
-        for(int i = 0; i < _evento.Count; i++)
+        for (int i = 0; i < _evento.Count; i++)
         {
             _evento[i].ChequearEvento(_tag);
         }
