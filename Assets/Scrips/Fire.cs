@@ -7,8 +7,13 @@ public class Fire : MonoBehaviour
     public float hp;
     private bool estaPrecionado;
     private bool estaApagado;
+    public GameObject fuego, humo;
+    public BoxCollider2D col;
 
-
+    private void Start()
+    {
+        col = GetComponent<BoxCollider2D>();
+    }
     private void OnMouseDown()
     {
         estaPrecionado = true;
@@ -26,9 +31,12 @@ public class Fire : MonoBehaviour
         }
         if(hp <= 0 && estaApagado == false)
         {
-            //efectoVapor
             //seapago 
-            //desactivarSpriteFuego
+            fuego.SetActive(false);
+            //efectoVapor
+            humo.SetActive(true);
+            //desactivarCollider
+            col.enabled = false;
             estaApagado = true;
         }
     }
