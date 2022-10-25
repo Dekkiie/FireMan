@@ -322,7 +322,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.022393376, y: -0.1298816}
+  m_Offset: {x: 0.0055642575, y: -0.16343077}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -333,7 +333,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5700473, y: 0.49838832}
+  m_Size: {x: 0.37034997, y: 0.21401933}
   m_EdgeRadius: 0
 --- !u!114 &8803140824763062783
 MonoBehaviour:
@@ -348,6 +348,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 30
+  duracionFuego: 0
+  cambioFase: 0
   fuego: {fileID: 8803140823418322191}
   humo: {fileID: 8803140823672736764}
   col: {fileID: 0}
+  anim: {fileID: 0}
