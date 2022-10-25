@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public float fuerzaChorro;
-
+    public float fuegoSubiendo;
     public static GameManager gm;
 
     private void Awake()
