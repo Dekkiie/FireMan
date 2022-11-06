@@ -79,17 +79,22 @@ public class RayCast : MonoBehaviour
     {
         if(gastandoAgua == true)
         {
-            agua -= Time.deltaTime;
-            CantidadAgua(agua);
-            if(agua <= 0)
+            if (muerto == false)
             {
-                vida--;
-                agua = maxAgua;
-                muerto = true; 
+                agua -= Time.deltaTime;
+                CantidadAgua(agua);
+                if (agua <= 0)
+                {
+                    vida--;
+                    agua = maxAgua;
+
+                }
             }
 
             if(vida <= 0) 
             {
+                agua = 0;
+                muerto = true;
                 particula.Stop();
                 Debug.Log("Muerto");
             }

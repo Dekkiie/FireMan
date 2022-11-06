@@ -180,7 +180,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -5
   m_Sprite: {fileID: 21300000, guid: d538e19a2bf6682409ae74a9b746133f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -276,6 +276,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1cea06ace22d3a04ebbdc91bd840ed61, type: 3}
+--- !u!114 &450202093 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4346362400952833152, guid: e5be5ccaf923660439a0f2afe793ba3b, type: 3}
+  m_PrefabInstance: {fileID: 2131690707}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c40105f8b701ec42a489daec3bd5029, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &942714474 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4346362400689933280, guid: e5be5ccaf923660439a0f2afe793ba3b, type: 3}
+  m_PrefabInstance: {fileID: 2131690707}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1231139514
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -287,6 +309,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CamionBomberos
       objectReference: {fileID: 0}
+    - target: {fileID: 551922568757538318, guid: d288d9556f724444da6ec8994ac1c523, type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 942714474}
     - target: {fileID: 551922568757538319, guid: d288d9556f724444da6ec8994ac1c523, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -340,6 +366,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2162868160274674224, guid: 3dcc5e67e74637847bf46cbd7ea41de1, type: 3}
+      propertyPath: timebar
+      value: 
+      objectReference: {fileID: 450202093}
     - target: {fileID: 2162868160274674225, guid: 3dcc5e67e74637847bf46cbd7ea41de1, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -557,6 +587,10 @@ PrefabInstance:
     - target: {fileID: 4346362400289295540, guid: e5be5ccaf923660439a0f2afe793ba3b, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4346362400952833159, guid: e5be5ccaf923660439a0f2afe793ba3b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 770
       objectReference: {fileID: 0}
     - target: {fileID: 4346362401103785176, guid: e5be5ccaf923660439a0f2afe793ba3b, type: 3}
       propertyPath: m_Pivot.x
