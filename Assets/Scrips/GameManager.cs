@@ -9,7 +9,13 @@ public class GameManager : MonoBehaviour
     public static GameManager gm;
     public float vidaMax,vida;
 
+    GameObject[] fuegos;
+
     public TimeBar timebar;
+
+    public bool killFire;
+
+    public GameObject killer;
 
 
     private void Awake()
@@ -24,17 +30,32 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         Tiempo();
+
     }
     public void Tiempo()
     {
-        vida -= Time.deltaTime;
-        timebar.SetHealthh(vida);
-
-        if(vida <= 0)
+        if (killFire == true) 
         {
-            Debug.Log("Edificio Quemado");
-        }
-    }
+            vida -= Time.deltaTime;
+            timebar.SetHealthh(vida);
 
+            if (vida <= 0)
+            {
+                Debug.Log("Edificio Quemado");
+            }
+        }
+        
+    }
+    public void LvlEnd()
+    {
+        killFire = true;
+        GameObject[] objetos = GameObject.FindGameObjectsWithTag("Fuego");
+        for (int i = 0; i < objetos.Length; i++)
+        {
+            Destroy(objetos[i]);
+        }
+        killer.SetActive(true);
+        
+    }
 
 }

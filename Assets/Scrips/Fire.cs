@@ -59,7 +59,16 @@ public class Fire : MonoBehaviour
             //desactivarCollider
             col.enabled = false;
             estaApagado = true;
+            Spawner.spw.fuegosApagados++;
         }
         estaPrecionado = false;
+    }
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("END"))
+        {
+            Destroy(gameObject);
+            Debug.Log("aaaaa");
+        }
     }
 }
