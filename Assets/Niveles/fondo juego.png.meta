@@ -124,7 +124,7 @@ TextureImporter:
         width: 902
         height: 1081
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -145,7 +145,7 @@ TextureImporter:
         width: 158
         height: 73
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -153,6 +153,69 @@ TextureImporter:
       bones: []
       spriteID: f8c5e3bc604cfc84b9277050217d3ad5
       internalID: -1156372672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fondo juego_2
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 211
+        width: 1016
+        height: 868
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07f5828bc9cf9d1469315cc474e52774
+      internalID: -1860374299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fondo juego_3
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 211
+        width: 350
+        height: 695
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8900a8644b2894245ab6d819598753a4
+      internalID: -770700048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fondo juego_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 899
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f86a083f9f873f04592da7d976298ff8
+      internalID: 1233210332
       vertices: []
       indices: 
       edges: []
@@ -169,6 +232,9 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       fondo juego_0: 1558258196
+      fondo juego_2: -1860374299
+      fondo juego_4: 1233210332
+      fondo juego_3: -770700048
       fondo juego_1: -1156372672
   spritePackingTag: 
   pSDRemoveMatte: 0

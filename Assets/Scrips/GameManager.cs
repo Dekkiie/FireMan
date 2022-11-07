@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -57,5 +58,21 @@ public class GameManager : MonoBehaviour
         killer.SetActive(true);
         
     }
+    public void ComenzarJuego()
+    {
+        SceneManager.LoadScene("Tutorial");
 
+    }
+    public void CargarNivel(string nombreNivel)
+    {
+        SceneManager.LoadScene(nombreNivel);
+    }
+    public void Salir()
+    {
+        Application.Quit();
+    }
+    public void Reiniciar()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 0);
+    }
 }
