@@ -43,7 +43,7 @@ public class Fire : MonoBehaviour
         if(hp > cambioFase)
         {
             cambio = true;
-            GameManager.gm.restarVida += 0.002f;
+            //GameManager.gm.restarVida += 0.002f;
             anim.Play("Fire_lvl_2");
         }
         

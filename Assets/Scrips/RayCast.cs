@@ -16,6 +16,8 @@ public class RayCast : MonoBehaviour
     public LayerMask layerMask;
     public ParticleSystem particula;
     public ParticleSystem.EmissionModule emisor;
+    public AudioSource audios;
+    public AudioClip audios2;
 
     public static RayCast rc; 
 
@@ -26,6 +28,7 @@ public class RayCast : MonoBehaviour
     }
     private void Start()
     {
+        audios = GetComponent<AudioSource>();
         particula.Stop();
         gastandoAgua = false;
         muerto = false;
@@ -37,8 +40,10 @@ public class RayCast : MonoBehaviour
     {
         if (!muerto)
         {
+            audios.PlayOneShot(audios2);
             if (Input.touchCount > 0)
             {
+                
                 gastandoAgua = true;
                 particula.Play();
                 Touch touch = Input.GetTouch(0);

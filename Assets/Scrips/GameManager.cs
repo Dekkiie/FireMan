@@ -19,7 +19,9 @@ public class GameManager : MonoBehaviour
 
     public bool killFire,gano;
 
-    public GameObject killer,menuVictoria,menuDerrota,fuego;
+    public GameObject killer,menuVictoria,menuDerrota,fuego,tuto;
+
+    public Animator anim;
 
 
     private void Awake()
@@ -79,6 +81,7 @@ public class GameManager : MonoBehaviour
         killer.SetActive(true);
         Debug.Log("Victoria");
         Invoke("MostrarMenuVictoria", delayMenu);
+        killFire = false;
     }
     public void MenuDerrota()
     {
@@ -99,7 +102,11 @@ public class GameManager : MonoBehaviour
     }
     public void Salir()
     {
-        Application.Quit();
+        anim.Play("entra");
+    }
+    public void MenuBack()
+    {
+        anim.Play("sale");
     }
     public void Reiniciar()
     {
