@@ -38,12 +38,13 @@ public class RayCast : MonoBehaviour
     }
     public void Tocar()
     {
+        audios.volume = Mathf.Clamp(audios.volume, 0, 1);
         if (!muerto)
         {
-            audios.PlayOneShot(audios2);
+           
             if (Input.touchCount > 0)
             {
-                
+                audios.volume += Time.deltaTime;
                 gastandoAgua = true;
                 particula.Play();
                 Touch touch = Input.GetTouch(0);
@@ -65,6 +66,7 @@ public class RayCast : MonoBehaviour
             }
             else
             {
+                audios.volume -= Time.deltaTime;
                 gastandoAgua = false;
                 particula.Stop();
             }
