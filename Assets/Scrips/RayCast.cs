@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class RayCast : MonoBehaviour
 {
+    public GameObject menuMuerte;
     public Slider slider;
 
     public float agua, maxAgua;
@@ -16,8 +17,13 @@ public class RayCast : MonoBehaviour
     public ParticleSystem particula;
     public ParticleSystem.EmissionModule emisor;
 
-    bool gastandoAgua,muerto;
+    public static RayCast rc; 
 
+    bool gastandoAgua,muerto;
+    public void Awake()
+    {
+        rc = this;
+    }
     private void Start()
     {
         particula.Stop();
@@ -96,7 +102,9 @@ public class RayCast : MonoBehaviour
                 agua = 0;
                 muerto = true;
                 particula.Stop();
+                menuMuerte.SetActive(true);
                 Debug.Log("Muerto");
+                GameManager.gm.restarVida += 0.003f;
             }
         }
 

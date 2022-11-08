@@ -25,6 +25,7 @@ public class Spawner : MonoBehaviour
     }
     void Update()
     {
+        if (GameManager.gm.gano) return;
         timer += Time.deltaTime;
         if (timer > spawnTime)
         {
@@ -36,6 +37,8 @@ public class Spawner : MonoBehaviour
                 Instantiate(mapa[Random.Range(0, mapa.Length)], randomSpawn, Quaternion.identity);
                 timer = 0;
                 spawnTime = Random.Range(min, max);
+
+                GameManager.gm.restarVida += 0.001f; 
             }
         }
         DetenerSpawner();
@@ -43,8 +46,10 @@ public class Spawner : MonoBehaviour
 
     public void DetenerSpawner()
     {
+        
         if(fuegosApagados >= cantidadFuegos)
         {
+            GameManager.gm.gano = true;
             spawn = false;
 
             GameManager.gm.LvlEnd();

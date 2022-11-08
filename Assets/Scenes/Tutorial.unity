@@ -294,7 +294,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1163524017892573556, guid: 98b6e22526684994f92e8a8873a585e9, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3017951599219851700, guid: 98b6e22526684994f92e8a8873a585e9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -883,6 +883,10 @@ PrefabInstance:
     - target: {fileID: 9085452343840695365, guid: d9292663a147ef642b3dbcf75536e8d8, type: 3}
       propertyPath: m_Name
       value: PasarNivel
+      objectReference: {fileID: 0}
+    - target: {fileID: 9085452343840695365, guid: d9292663a147ef642b3dbcf75536e8d8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9085452343840695366, guid: d9292663a147ef642b3dbcf75536e8d8, type: 3}
       propertyPath: m_Pivot.x

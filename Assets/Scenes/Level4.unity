@@ -134,17 +134,37 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spawner
       objectReference: {fileID: 0}
+    - target: {fileID: 8932586057918391088, guid: c60eb206a7dc67b4f99a63ccef132328, type: 3}
+      propertyPath: xMax
+      value: 2.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 8932586057918391088, guid: c60eb206a7dc67b4f99a63ccef132328, type: 3}
+      propertyPath: xMin
+      value: -2.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8932586057918391088, guid: c60eb206a7dc67b4f99a63ccef132328, type: 3}
+      propertyPath: yMax
+      value: 0.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 8932586057918391088, guid: c60eb206a7dc67b4f99a63ccef132328, type: 3}
+      propertyPath: yMin
+      value: -2.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 8932586057918391088, guid: c60eb206a7dc67b4f99a63ccef132328, type: 3}
+      propertyPath: cantidadFuegos
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 8932586057918391089, guid: c60eb206a7dc67b4f99a63ccef132328, type: 3}
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8932586057918391089, guid: c60eb206a7dc67b4f99a63ccef132328, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.89
+      value: 2.09
       objectReference: {fileID: 0}
     - target: {fileID: 8932586057918391089, guid: c60eb206a7dc67b4f99a63ccef132328, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.19
+      value: 0.98
       objectReference: {fileID: 0}
     - target: {fileID: 8932586057918391089, guid: c60eb206a7dc67b4f99a63ccef132328, type: 3}
       propertyPath: m_LocalPosition.z

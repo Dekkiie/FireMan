@@ -182,7 +182,7 @@ Animator:
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 31b6c74a1080f8140b0b782d7d6cc9aa, type: 2}
   m_CullingMode: 0
-  m_UpdateMode: 0
+  m_UpdateMode: 2
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
@@ -265,7 +265,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 25
   duracionFuego: 60
-  cambioFase: 40
+  cambioFase: 30
   fuego: {fileID: 2698117016894144239}
   humo: {fileID: 2698117016102832156}
   col: {fileID: 0}

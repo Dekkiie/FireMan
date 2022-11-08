@@ -6,7 +6,7 @@ public class Fire : MonoBehaviour
 {
     public float hp;
     private bool estaPrecionado;
-    private bool estaApagado;
+    private bool estaApagado,cambio;
     [SerializeField] private float duracionFuego,cambioFase;
     public GameObject fuego, humo;
     public BoxCollider2D col;
@@ -15,6 +15,7 @@ public class Fire : MonoBehaviour
     private void Start()
     {
         col = GetComponent<BoxCollider2D>();
+        cambio = false;
 
     }
     
@@ -41,6 +42,8 @@ public class Fire : MonoBehaviour
         }
         if(hp > cambioFase)
         {
+            cambio = true;
+            GameManager.gm.restarVida += 0.002f;
             anim.Play("Fire_lvl_2");
         }
         
@@ -51,6 +54,11 @@ public class Fire : MonoBehaviour
         }
         if (hp <= 0 && estaApagado == false)
         {
+            if (cambio == true) 
+            {
+                GameManager.gm.restarVida -= 0.005f;
+            }
+            GameManager.gm.restarVida -= 0.001f;
             hp = -1;
             //seapago 
             fuego.SetActive(false);
