@@ -177,7 +177,7 @@ PrefabInstance:
       objectReference: {fileID: 2138629114}
     - target: {fileID: 2162868160274674224, guid: 3dcc5e67e74637847bf46cbd7ea41de1, type: 3}
       propertyPath: fuerzaChorro
-      value: 0.3
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 2162868160274674224, guid: 3dcc5e67e74637847bf46cbd7ea41de1, type: 3}
       propertyPath: menuVictoria
@@ -279,6 +279,10 @@ PrefabInstance:
     - target: {fileID: 1195340912297849227, guid: e5be5ccaf923660439a0f2afe793ba3b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3415069741560552110, guid: e5be5ccaf923660439a0f2afe793ba3b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4119954212002050715, guid: e5be5ccaf923660439a0f2afe793ba3b, type: 3}
       propertyPath: m_LocalScale.x
