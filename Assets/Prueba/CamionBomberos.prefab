@@ -157,7 +157,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 12
   m_Sprite: {fileID: -1669033806, guid: cc559bfe12db544469260d588834cb04, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5229,8 +5229,8 @@ MonoBehaviour:
   menuMuerte: {fileID: 0}
   slider: {fileID: 0}
   agua: 0
-  maxAgua: 30
-  vida: 1
+  maxAgua: 50
+  vida: 3
   startPoint: {fileID: 551922568965664134}
   layerMask:
     serializedVersion: 2
@@ -5248,11 +5248,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 03a9205ee41581742ae90f13b9b6e067, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

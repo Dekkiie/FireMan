@@ -1331,7 +1331,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5491551011786758092}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4992095352218414481, guid: 20e1214d945a6af4caf27af57531d801, type: 3}
+        m_TargetAssemblyTypeName: CambioEscena, Assembly-CSharp
+        m_MethodName: EscenaInvokar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2180027772362827479
 GameObject:
   m_ObjectHideFlags: 0
@@ -1740,7 +1752,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7600476835383047333}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2162868160274674224, guid: 3dcc5e67e74637847bf46cbd7ea41de1, type: 3}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: Menu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2612868776122646411
 GameObject:
   m_ObjectHideFlags: 0
@@ -5303,7 +5327,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3652945634209202183}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2162868160274674224, guid: 3dcc5e67e74637847bf46cbd7ea41de1, type: 3}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: Reiniciar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8093100907407439629
 GameObject:
   m_ObjectHideFlags: 0

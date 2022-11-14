@@ -48,4 +48,18 @@ MonoBehaviour:
   fuegoSubiendo: 0.005
   vidaMax: 100
   vida: 0
+  delayMenu: 0
+  delayMenuLost: 0
+  restarVida: 0
+  cantF: {fileID: 0}
+  totalF: {fileID: 0}
+  vidaas: {fileID: 0}
   timebar: {fileID: 0}
+  killFire: 0
+  gano: 0
+  killer: {fileID: 0}
+  menuVictoria: {fileID: 0}
+  menuDerrota: {fileID: 0}
+  fuego: {fileID: 0}
+  tuto: {fileID: 0}
+  anim: {fileID: 0}

@@ -621,17 +621,9 @@ PrefabInstance:
       value: CamionBomberos
       objectReference: {fileID: 0}
     - target: {fileID: 551922568757538318, guid: d288d9556f724444da6ec8994ac1c523, type: 3}
-      propertyPath: vida
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 551922568757538318, guid: d288d9556f724444da6ec8994ac1c523, type: 3}
       propertyPath: slider
       value: 
       objectReference: {fileID: 1943658548}
-    - target: {fileID: 551922568757538318, guid: d288d9556f724444da6ec8994ac1c523, type: 3}
-      propertyPath: maxAgua
-      value: 50
-      objectReference: {fileID: 0}
     - target: {fileID: 551922568757538318, guid: d288d9556f724444da6ec8994ac1c523, type: 3}
       propertyPath: menuMuerte
       value: 
@@ -680,18 +672,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8777121225708274561, guid: d288d9556f724444da6ec8994ac1c523, type: 3}
-      propertyPath: Loop
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8777121225708274561, guid: d288d9556f724444da6ec8994ac1c523, type: 3}
-      propertyPath: m_Volume
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8777121225708274561, guid: d288d9556f724444da6ec8994ac1c523, type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 03a9205ee41581742ae90f13b9b6e067, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d288d9556f724444da6ec8994ac1c523, type: 3}
 --- !u!1 &1494651848 stripped

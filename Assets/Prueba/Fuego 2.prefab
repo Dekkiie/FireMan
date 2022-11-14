@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2698117016102832154}
   - component: {fileID: 2698117016102832155}
+  - component: {fileID: 7447292867104182186}
   m_Layer: 3
   m_Name: Square
   m_TagString: Untagged
@@ -25,8 +26,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2698117016102832156}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: -0.42, z: 0}
+  m_LocalScale: {x: 0.16577609, y: 0.16577609, z: 0.16577609}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6870991999157946688}
@@ -40,7 +41,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2698117016102832156}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -74,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 05c66c15a459e7a41a49f69c7b4616dc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -85,6 +86,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &7447292867104182186
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2698117016102832156}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6797e0cc087da314c9c56ebc62a964cc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2698117016894144239
 GameObject:
   m_ObjectHideFlags: 0
@@ -219,7 +240,7 @@ Transform:
   m_GameObject: {fileID: 2698117017159997968}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.14549, y: 0.34385, z: 0}
-  m_LocalScale: {x: 1.4508, y: 1.4508, z: 1.4508}
+  m_LocalScale: {x: 1.0276307, y: 1.0276307, z: 1.0276307}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2698117016894144237}
@@ -266,7 +287,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 70
-  duracionFuego: 60
+  duracionFuego: 8
   cambioFase: 30
   fuego: {fileID: 2698117016894144239}
   humo: {fileID: 2698117016102832156}
@@ -287,7 +308,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0.1
+  m_GravityScale: 0.5
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -394,7 +415,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6870991999157946688
 Transform:
   m_ObjectHideFlags: 0
