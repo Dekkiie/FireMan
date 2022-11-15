@@ -58,7 +58,7 @@ public class Fire : MonoBehaviour
             {
                 GameManager.gm.restarVida -= 0.005f;
             }
-            GameManager.gm.restarVida -= 0.001f;
+            GameManager.gm.restarVida -= 0.004f;
             hp = -1;
             //seapago 
             fuego.SetActive(false);

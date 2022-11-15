@@ -26,12 +26,15 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
+        Application.targetFrameRate = 60;
         Time.timeScale = 1;
         gm = this;
         killFire = true;
     }
     private void Start()
     {
+
+
         vida = vidaMax;
         timebar.SetMaxHealth(vidaMax);
     }

@@ -263,7 +263,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e7251f9401bb494588ceab174ba01d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 25
+  hp: 15
   duracionFuego: 60
   cambioFase: 30
   fuego: {fileID: 2698117016894144239}

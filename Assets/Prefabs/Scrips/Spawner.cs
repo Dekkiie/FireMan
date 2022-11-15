@@ -39,7 +39,7 @@ public class Spawner : MonoBehaviour
                 timer = 0;
                 spawnTime = Random.Range(min, max);
 
-                GameManager.gm.restarVida += 0.001f; 
+                GameManager.gm.restarVida += 0.005f; 
             }
         }
         DetenerSpawner();
@@ -50,11 +50,12 @@ public class Spawner : MonoBehaviour
         
         if(fuegosApagados >= cantidadFuegos)
         {
-            anim.Play("death");
+            
             GameManager.gm.gano = true;
             spawn = false;
             
             GameManager.gm.LvlEnd();
+            anim.Play("death");
         }
 
     }
